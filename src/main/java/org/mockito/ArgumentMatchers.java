@@ -936,7 +936,8 @@ public class ArgumentMatchers {
      * Actual invocations have different arguments:
      * gryffindor.join("Draco Malfoy");
      * -> at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-     * </i></pre>     
+     * </i></pre>
+     * @since 5.2.1
      */
     public static <T> T argThatMatch(Consumer<T> assertion) {
         ArgumentMatcher<T> matcher = arg -> {
